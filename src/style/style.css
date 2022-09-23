@@ -17,7 +17,7 @@ body {
 .imgLft {
     max-width: 600px;
     height: auto;
-    
+
 }
 
 .rightSide {
@@ -55,4 +55,5 @@ body {
 
 .login{
     margin-top: 20px;
+    
 }
