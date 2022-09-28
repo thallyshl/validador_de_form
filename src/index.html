@@ -11,23 +11,24 @@
 
 <body>
 
-    <div class="screen">
+    <main class="screen">
 
-        <div class="left">
+        <section class="left">
             <img src="../assets/img/financial_data.png" alt="Imagem ilustrativa de um pc ">
-        </div>
+        </section>
 
         <div class="right">
-            <div class="sign">
+            <form class="sign form" action="https://www.google.com.br">
                 <h1>Crie uma conta</h1>
-                <input type="text" placeholder="Email" class="email">
-                <input type="text" placeholder="Senha" class="password">
+                <input type="text" placeholder="Email" class="email" data-rules="required" />
+                <input type="password" placeholder="Senha" class="password" data-rules="required" />
                 <button class="btn">Cadastrar</button>
                 <p>Já tem conta?</p>
                 <a href="">Fazer login</a>
-            </div>
+            </form>
         </div>
-    </div>
+    </main>
+    
     <script src="./script/script.js"></script>
 </body>
 

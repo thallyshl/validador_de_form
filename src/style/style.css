@@ -29,6 +29,7 @@ body{
     border-radius: 6px;
     padding: 10px;
     border: 1px solid rgb(61, 62, 91);
+    box-shadow: 10px 5px 5px grey;
 }
 
 .btn{
@@ -41,6 +42,9 @@ body{
     font-weight: bold;
     color: #fff;
     background-color: rgb(61, 62, 91);
+    box-shadow: 10px 6px 5px grey;
+
+    
 }
 
 .left img{
