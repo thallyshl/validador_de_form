@@ -11,7 +11,7 @@
 
 <body>
 
-    <form action="" class="screen">
+    <form action="https://github.com/thallyshl" class="screen">
 
         <section class="left">
             <img src="../assets/img/financial_data.png" alt="Imagem ilustrativa de um pc ">
@@ -22,11 +22,18 @@
                 <h1>Crie uma conta</h1>
                 <div class="contentInput">
                     <input type="text" placeholder="Email" class="email" required />
-                    <small id="smallEmail" class="erroEmail"></small>
+                    <small id="smallEmail"></small>
                 </div>
                 <div class="contentInput">
-                    <input type="password" placeholder="Senha" class="password" data-rules="required" />
-                    <small id="smallPassword" class="erroPassword"></small>
+                    <input type="password" placeholder="Senha" class="password" />
+
+                    <div id="Password" class="errorNone">
+                        <ul>
+                            <li>Uma letra maiúscula</li>
+                            <li>Um número</li>
+                            <li>Um caracter especial</li>
+                        </ul>
+                    </div>
                 </div>
                 <button class="btn">Cadastrar</button>
                 <p>Já tem conta?</p>

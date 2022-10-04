@@ -60,15 +60,19 @@ body{
     font-weight: bold;
     color: #fff;
     background-color: rgb(61, 62, 91);
-    box-shadow: 3px 3px 5px grey;  
+    box-shadow: 10px 6px 5px grey;
+    transition: transform .3s;
+    
 }
-.btn {
-    cursor: grab;
+
+.btn:hover{
+    transform: scale(1.08);
 }
 
 .contentInput {
     display: flex;
     flex-direction: column;
+    width: 60%;
 
 }
 
@@ -80,8 +84,12 @@ body{
 .right a{
     margin-top: 10px;
     text-decoration: none;
-    color: rgb(61, 62, 91);
-    transition: tranform .3s;
+    color: blue;
+    transition: transform .3s;
+}
+
+.right a:hover{
+    transform: scale(1.08);
 }
 
 .right a:hover {
@@ -91,6 +99,7 @@ body{
 .error {
     margin-top: 10px;
     color: #db5a5a;
+    font-size: 0.8rem;
 }
 
 .errorNone {
