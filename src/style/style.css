@@ -60,12 +60,23 @@ body{
     font-weight: bold;
     color: #fff;
     background-color: rgb(61, 62, 91);
-    box-shadow: 3px 3px 5px grey;  
-}
-.btn {
-    cursor: grab;
+    box-shadow: 10px 6px 5px grey;
+    transition: transform .3s;
+    
 }
 
+.btn:hover{
+    transform: scale(1.08);
+}
+
+.left img{
+    width: 900px;
+}
+.right h1{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: rgb(61, 62, 91);
+}
 .right p{
     margin-top: 10px;
     font-weight: bold;
@@ -74,8 +85,12 @@ body{
 .right a{
     margin-top: 10px;
     text-decoration: none;
-    color: rgb(61, 62, 91);
-    transition: tranform .3s;
+    color: blue;
+    transition: transform .3s;
+}
+
+.right a:hover{
+    transform: scale(1.08);
 }
 
 .right a:hover {
