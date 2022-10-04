@@ -66,6 +66,12 @@ body{
     cursor: grab;
 }
 
+.contentInput {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .right p{
     margin-top: 10px;
     font-weight: bold;
@@ -85,6 +91,8 @@ body{
 .error {
     margin-top: 10px;
     color: #db5a5a;
-    align-self: flex-start;
-    margin-left: 22%;
+}
+
+.errorNone {
+    display: none;
 }

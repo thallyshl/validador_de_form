@@ -11,11 +11,15 @@ const validator = () => {
     const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
 
     if (emailRegex.exec(email.value)) {
-        console.log('igual');
+        //const small = document.querySelector('#smallEmail');
+        small.className = 'errorNone';
+        small.innerHTML =  '';
+
     } else {
-        const small = document.querySelector('.erroEmail');
+        const small = document.querySelector('#smallEmail');
         small.className = 'error';
         small.innerHTML =  'Email inválido';
+        console.log(small)
 
     }
 

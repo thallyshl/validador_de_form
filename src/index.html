@@ -20,10 +20,14 @@
         <section class="right">
             <div class="sign form">
                 <h1>Crie uma conta</h1>
-                <input type="text" placeholder="Email" class="email" required />
-                <small class="erroEmail"></small>
-                <input type="password" placeholder="Senha" class="password" data-rules="required" />
-                <small class="erroPassword"></small>
+                <div class="contentInput">
+                    <input type="text" placeholder="Email" class="email" required />
+                    <small id="smallEmail" class="erroEmail"></small>
+                </div>
+                <div class="contentInput">
+                    <input type="password" placeholder="Senha" class="password" data-rules="required" />
+                    <small id="smallPassword" class="erroPassword"></small>
+                </div>
                 <button class="btn">Cadastrar</button>
                 <p>Já tem conta?</p>
                 <a href="">Fazer login</a>
