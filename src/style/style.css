@@ -13,14 +13,32 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
 }
 
+.left {
+    width: 65%;
+}
 
-.sign{
-    width: 500px;
+.left img{
+    width: 100%;
+}
+
+.right {
+    width: 35%;
+}
+
+.right h1{
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: rgb(61, 62, 91);
+}
+
+.form{
+    width: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .sign input{
@@ -29,11 +47,11 @@ body{
     border-radius: 6px;
     padding: 10px;
     border: 1px solid rgb(61, 62, 91);
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 3px 3px 5px grey;
 }
 
 .btn{
-    width: 110px;
+    width: 23%;
     height: 35px;
     margin-top: 20px;
     border: 1px solid black;
@@ -42,19 +60,12 @@ body{
     font-weight: bold;
     color: #fff;
     background-color: rgb(61, 62, 91);
-    box-shadow: 10px 6px 5px grey;
-
-    
+    box-shadow: 3px 3px 5px grey;  
+}
+.btn {
+    cursor: grab;
 }
 
-.left img{
-    width: 900px;
-}
-.right h1{
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: rgb(61, 62, 91);
-}
 .right p{
     margin-top: 10px;
     font-weight: bold;
@@ -63,5 +74,17 @@ body{
 .right a{
     margin-top: 10px;
     text-decoration: none;
-    color: blue;
+    color: rgb(61, 62, 91);
+    transition: tranform .3s;
+}
+
+.right a:hover {
+    transform: scale(1.08);
+}
+
+.error {
+    margin-top: 10px;
+    color: #db5a5a;
+    align-self: flex-start;
+    margin-left: 22%;
 }

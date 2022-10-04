@@ -1,48 +1,24 @@
-const validator = {
-    handleSubmit:(event)=>{
-        event.preventDefault();
+const form = document.querySelector('.screen').addEventListener('submit', evt => {
+    
+    evt.preventDefault();
+    validator();
 
-        const send = true
-        const inputs = sign.querySelectorAll('input')
+});
 
-        for(let i = 0; i<inputs.length; i++){
-            let input = inputs [i]
-            let check = validator.checkInput(input)
-            if(check !== true){
-                send = false
-                console.log(check)
-            }
-        }
+const validator = () => {
+    const email = document.querySelector('.email');
+    const password = document.querySelector('.password');
+    const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
 
-        if(send){
-            sign.submit();
-        }
-    },
-    checkInput:(input) =>{
-        let rules = input.getAttribute('data-rules')
-        if(rules !== null){
-            rules = rules.split('|');
-            for(let k in rules){
-                let rDetails = rules[k].split('=')
-                switch(rDetails[0]){
-                    case 'required':
-                        if(input.value !== ""){
-                            return "Campo não pode ser vazio"
-                        }
-                    break;
-                    
-                }
-            }
-        }
-        return true
+    if (emailRegex.exec(email.value)) {
+        console.log('igual');
+    } else {
+        const small = document.querySelector('.erroEmail');
+        small.className = 'error';
+        small.innerHTML =  'Email inválido';
 
     }
+
+
+    console.log(email.value)
 }
-
-const form = document.querySelector(".form")
-
-form.addEventListener("submit", validator.handleSubmit);
-
-
-
-
